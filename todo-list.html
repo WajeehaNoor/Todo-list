@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background-color: rgb(228, 231, 106);
+        }
+
+        .Todo-container  {
+            
+            width: 360px;
+            padding: 33px;
+            text-align: center;
+            background-color: white;
+            margin-left: 33%;
+            margin-top: 5px;
+        }
+
+        .input-container {
+            width: 270px;
+            padding: 8px;
+            border: 2px solid rgb(218, 236, 17);
+            font-size: 19px;
+            outline: none;
+        }
+        .add-btn{
+            width: 60px;
+            height: 40px;
+            background-color: rgb(90, 212, 123);
+            color: black;
+            border-radius: 2px;
+            font-size: 19px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="Todo-container">
+        <h1> My To Do App</h1>
+        <div class="input-container">
+            <input type="text" id="todo-input" placeholder="Enter Your Task..."/>
+            <button onclick="addtodo()" class="add-btn">Add</button>
+        </div>
+        <div id="todo-list"></div>
+    </div>
+    <script src="todo-list.js"></script>
+</body>
+</html>
